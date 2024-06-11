@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {ThemeProvider} from '@mui/material/styles';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
@@ -14,11 +14,12 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 
 import {sections} from './data/sections'
-import {mainFeaturedPost, featuredPost} from './posts/featured'
+import {mainFeaturedPost, featuredPosts} from './posts/featured'
 
 import post1 from './posts/blog-post.1.md';
 import post2 from './posts/blog-post.2.md';
 import post3 from './posts/blog-post.3.md';
+import theme from "./theme";
 
 const posts = [post1, post2, post3];
 
@@ -46,12 +47,9 @@ const sidebar = {
   ],
 };
 
-// TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
-
 export default function Blog() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
         <Header title="Blog" sections={sections} />

@@ -1,4 +1,4 @@
-const sections = [
+export const sections = [
     { title: 'Technology', url: '#' },
     { title: 'Design', url: '#' },
     { title: 'Culture', url: '#' },
@@ -10,5 +10,3 @@ const sections = [
     { title: 'Style', url: '#' },
     { title: 'Travel', url: '#' },
 ];
-
-export default sections

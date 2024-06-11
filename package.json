@@ -17,6 +17,7 @@
     "@types/react-dom": "^18.3.0",
     "markdown-to-jsx": "^7.4.7",
     "material-ui": "^0.20.2",
+    "md-to-jsx": "^0.0.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",

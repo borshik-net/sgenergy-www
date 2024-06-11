@@ -1,9 +1,6 @@
 import * as React from 'react';
-import Grid from '../material-ui/packages/mui-material/src/Grid';
-import Stack from '../material-ui/packages/mui-material/src/Stack';
-import Paper from '../material-ui/packages/mui-material/src/Paper';
-import Typography from '../material-ui/packages/mui-material/src/Typography';
-import Link from '../material-ui/packages/mui-material/src/Link';
+import Grid from "@mui/material/Grid";
+import {Link, Paper, Stack, Typography} from "@mui/material";
 
 interface SidebarProps {
   archives: ReadonlyArray<{
